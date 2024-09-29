@@ -1,4 +1,5 @@
 body {
+    font-family: "cairo";
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -98,7 +99,6 @@ body {
 .main-content {
     width: 70vw;
     height: 100vh;
-    /* background-image: url(../bg_pic_xl.jpg); */
     display: flex;
     background-size: contain;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ body {
 
 .container {
     width: 70%;
-    height: 60%;
+    height: 70%;
     background-image: url(../assets/img/back-img.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -132,41 +132,59 @@ body {
     display: flex;
 }
 
+.container img:hover {
+    cursor: pointer;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    /* text-shadow: 2px 2px 4px red; */
+}
+
+.container h1,
+.container p {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: .7;
+}
+
+.container p {
+    color: rgb(43, 158, 43);
+}
+
 .left,
 .right {
     width: 30%;
     height: 100%;
-    background-color: rgba(0, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-start;
-    font-size: xx-large;
-}
-
-.left {
-    align-items: flex-end;
+    align-items: center;
 }
 
 .middle {
     width: 40%;
     height: 100%;
-    background-color: rgba(127, 255, 212, 0.2);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    font-size: xx-large;
+
 }
 
 .below {
     width: 70%;
-    height: 40%;
-    background-color: rgba(137, 43, 226, 0.2);
+    /* height: 40%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.below .about {
+    margin-top: 2rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .up,
