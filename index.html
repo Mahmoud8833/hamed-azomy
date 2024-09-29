@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <!-- Intro Section -->
+    <!-- <section class="intro ">
+        <img src="image1.png" id="image1" class="intro-image" alt="Intro Image 1">
+        <img src="image2.png" id="image2" class="intro-image" alt="Intro Image 2">
+        <img src="image3.png" id="image3" class="intro-image" alt="Intro Image 3">
+    </section> -->
+
+    <!-- Main content -->
+    <main class="main-content" id="main-content">
+        <div class="container">
+            <div class="left">
+                <div id="lock" class="modal-trigger" data-modal="modal-lock"><img src="assets/img/typo-sym.png"
+                        alt="Typogrphy Symbol"></i></div>
+                <div id="unlock" class="modal-trigger" data-modal="modal-unlock"><img src="assets/img/market-sym.png"
+                        alt="Marketing Symbol Symbol"></i></div>
+            </div>
+            <div class="middle">
+                <div>
+                    <p>أهلا بكم</p>
+                </div>
+                <div>
+                    <p>Start</p>
+                </div>
+                <div id="fan" class="modal-trigger" data-modal="modal-fan"><i class="fas fa-fan fan"></i></div>
+            </div>
+            <div class="right">
+                <div id="horn" class="modal-trigger" data-modal="modal-horn"><i class="fas fa-bullhorn horn"></i></div>
+                <div id="triangle" class="modal-trigger" data-modal="modal-triangle"><i
+                        class="fas fa-exclamation-triangle triangle"></i></div>
+            </div>
+        </div>
+        <div class="below">
+            <p>من نحن</p>
+            <div class="up">
+                <div class="left" id="top-left"></div>
+                <div class="middle" id="top-middle"></div>
+                <div class="right" id="top-right"></div>
+            </div>
+            <div class="down">
+                <div class="left" id="down-left"></div>
+                <div class="right" id="down-right"></div>
+            </div>
+        </div>
+
+        <div class="digital">
+            <img src="bg_pic_xl.jpg" alt="">
+        </div>
+    </main>
+
+
+
+    <!-- Modal structure -->
+    <div class="modal" id="modal-lock">
+        <div class="modal-content">
+            <h2>Lock Information</h2>
+            <p>Here goes the detailed information about the lock feature.</p>
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+    <div class="modal" id="modal-unlock">
+        <div class="modal-content">
+            <h2>Unlock Information</h2>
+            <p>Here goes the detailed information about the unlock feature.</p>
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+    <div class="modal" id="modal-fan">
+        <div class="modal-content">
+            <h2>Fan Information</h2>
+            <p>Here goes the detailed information about the fan feature.</p>
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+    <div class="modal" id="modal-horn">
+        <div class="modal-content">
+            <h2>Horn Information</h2>
+            <p>Here goes the detailed information about the horn feature.</p>
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+    <div class="modal" id="modal-triangle">
+        <div class="modal-content">
+            <h2>Triangle Information</h2>
+            <p>Here goes the detailed information about the triangle feature.</p>
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
